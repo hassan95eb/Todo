@@ -1,14 +1,8 @@
-To review React, I tried to use a project-based course. React has been set up using Vite. In this exercise, a timer component has been implemented using class components.
+# React + Vite
 
-Night Mode Feature:
-In this project, a Night Mode button has been added, utilizing useState and props drilling.
-This feature has been thoroughly tested and allows for the toggling of classes based on changes in the component state.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Using Props, Children, and the Spread Operator:
-This project utilizes props, props.children, and the spread operator (...). The props.
-children feature allows you to wrap components within other components, creating a flexible and reusable structure.
-The spread operator is used to pass down additional props efficiently.
+Currently, two official plugins are available:
 
-Project Enhancements:
-This project utilizes useContext to improve the performance of the components.
-Additionally, if you click on a saved time, that time will be deleted.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
