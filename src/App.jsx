@@ -12,7 +12,7 @@ const App = () => {
   // console.log(taskItem);
   return (
     <TaskContext.Provider value={{ taskItem, setTaskItem }}>
-      <div className="w-full h-screen bg-black flex justify-center items-center">
+      <div className="w-full h-screen bg-black flex justify-center items-center transition delay-150 duration-300 ease-in-out">
         <div className="w-4/5 md:w-2/5 bg-gray-900 text-amber-100 border-2 border-fuchsia-700 rounded-md px-3 py-2 shadow-md shadow-fuchsia-900">
           <h1 className="text-2xl font-semibold text-fuchsia-50 text-center border-b border-b-fuchsia-900 py-1">
             Todo List

@@ -18,7 +18,7 @@ const Topform = () => {
       },
     ];
     setTaskItem(newTaskItem);
-    task = "";
+    setTask("");
   };
   return (
     <form onSubmit={handleSaveTask}>

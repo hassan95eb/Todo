@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { useContext } from "react";
 import { TaskContext } from "../context/taskContext";
 
@@ -10,9 +9,12 @@ export default function TaskItems() {
     newTaskItem[index].done = !newTaskItem[index].done;
     setTaskItem(newTaskItem);
   };
+  const handleClickDelete = (id) => {
+    setTaskItem(taskItem.filter((t) => t.id != id));
+  };
   if (taskItem.length) {
     return (
-      <ul className="flex flex-col">
+      <ul className="flex flex-col h-[300px] overflow-y-auto">
         {taskItem.map((t) => (
           <li
             key={t.id}
@@ -37,7 +39,12 @@ export default function TaskItems() {
                   }}
                 ></i>
               )}
-              <i className="fa fa-trash cursor-pointer  text-orange-400 pl-2"></i>
+              <i
+                className="fa fa-trash cursor-pointer  text-orange-400 pl-2"
+                onClick={() => {
+                  handleClickDelete(t.id);
+                }}
+              ></i>
             </div>
           </li>
         ))}
